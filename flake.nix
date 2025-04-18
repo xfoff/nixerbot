@@ -1,5 +1,5 @@
 {
-  descruption = "Firebot";
+  description = "Firebot";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
