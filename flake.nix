@@ -31,7 +31,11 @@
           ];
 
           dontNpmBuild = true;
-          dontNpmInstall = true;
+          makeCacheWritable = true;
+
+          npmFlags = [
+            "--legacy-peer-deps"
+          ];
 
           env = {
             ELECTRON_SKIP_BINARY_DOWNLOAD = 1;
