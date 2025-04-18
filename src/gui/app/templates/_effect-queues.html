@@ -1,0 +1,14 @@
+<firebot-item-table
+    items="effectQueuesService.effectQueues"
+    on-items-update="onEffectQueuesUpdated(items)"
+    headers="headers"
+    sort-tag-context="effect queues"
+    orderable="true"
+    add-new-button-text="New Effect Queue"
+    on-add-new-clicked="effectQueuesService.showAddEditEffectQueueModal()"
+    context-menu-options="effectQueueOptions(item)"
+    no-data-message="No effect queues saved. You should make one! :)"
+    none-found-message="No effect queues found."
+    search-placeholder="Search effect queues"
+    status-field="active"
+></firebot-item-table>

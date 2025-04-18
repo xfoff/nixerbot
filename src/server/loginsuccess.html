@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Login Successful!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: rgb(30,32,35);
+      background: linear-gradient(59deg, rgb(32 35 39) 0%, rgb(46 47 52) 51%, rgb(42 44 48) 100%);
+      color: rgb(240, 240, 240);
+      font-family: 'Inter', sans-serif;
+      height: 100%;
+      margin: 0;
+    }
+    .centered {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrapper {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-12%);
+    }
+    .bold {
+      font-weight: 800;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="centered">
+    <div class="wrapper">
+      <img src="https://raw.githubusercontent.com/crowbartools/Firebot/master/src/gui/images/logo_transparent_2.png" style="width: 250px; height: 250px;">
+      <span style="font-size: 50px;font-weight: 100;"><strong id="providerName" class="bold"></strong> login successful!</span>
+      <span style="margin-top:15px;font-size: 22px;">You can close this page and return to <strong class="bold">Firebot</strong>.</span>
+    </div>
+  </div>
+  <script>
+    function redirectToFirebot() {
+      window.location.href = "firebot://";
+    }
+    redirectToFirebot();
+
+    const params = new URL(location).searchParams;
+
+    const provider = params.get("provider");
+    if(provider) {
+      document.getElementById("providerName").textContent = provider;
+    }
+
+  </script>
+</body>
+</html>

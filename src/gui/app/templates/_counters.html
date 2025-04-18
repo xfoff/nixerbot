@@ -1,0 +1,13 @@
+<firebot-item-table
+    items="countersService.counters"
+    on-items-update="onCountersUpdated(items)"
+    headers="headers"
+    sort-tag-context="counters"
+    orderable="true"
+    add-new-button-text="New Counter"
+    on-add-new-clicked="countersService.showAddEditCounterModal()"
+    context-menu-options="counterOptions(item)"
+    no-data-message="No counters saved. You should make one! :)"
+    none-found-message="No counters found."
+    search-placeholder="Search counters"
+></firebot-item-table>

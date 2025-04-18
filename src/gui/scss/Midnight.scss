@@ -1,0 +1,144 @@
+$light-background-color: #2a2f42;
+$light-background-border: #262c40;
+$light-background-box-shadow: adjust-color($light-background-color, $red: 7, $green: 7, $blue: 7);
+$medium-background-color: #022b69;
+$dark-background-color: #141828;
+$dark-background-border: #2e3240;
+$dark-background-box-shadow: adjust-color($dark-background-color, $red: 7, $green: 7, $blue: 7);
+
+
+$bad-color: #ff0000;
+$good-color: #90ee90;
+$info-color: #30a7ce40;
+$highlight-color: #ebb11f;
+
+
+$content-text-color: #ffffff;
+$content-background-color: $light-background-color;
+$chat-alert-background-color: $info-color;
+
+// Scrollbar
+$scrollbar-background-color: rgba(97, 97, 105, 0.58);
+$scrollbar-bar-color: #2f2f30;
+
+// Navigation
+$left-nav-link-text-color: $content-text-color;
+$left-nav-link-text-hover-color: $dark-background-color;
+$left-nav-link-text-selected-color: #f5f5f5;
+$nav-link-bg: $dark-background-color;
+$sidebar-bg: linear-gradient(135deg, $dark-background-color 0%, $dark-background-border 98%);
+
+// editor column
+$editor-column-bg: linear-gradient(to right, #232736 0%, #282c3a 100%);
+$editor-text-color: $content-text-color;
+$editor-row-hover-bg: #21263d;
+$editor-row-selected-bg: $dark-background-color;
+
+// Button Effects
+$effect-list-overflow-btn-color: #ffffff;
+$effect-list-bg-color: #1f2332;
+$effect-option-title: #24283a;
+
+// misc
+$text-dropdown-hover-color: $light-background-color;
+$board-settings-btn-color: #a9a9a9;
+$change-board-dropdown-color: #a9a9a9;
+$downarrow-color: #a9a9a9;
+$sort-tags-bg: #808080;
+$toggle-button-off-bg-color: #ffffff;
+
+$change-note-palette-title-color: orange;
+
+// Chat Window
+$chatWhisperColor: #e660f2;
+$chatTextColor: $content-text-color;
+$chat-message-alternate-bg: #333748;
+$sticker-bg-color:#29374a;
+$chat-input-bg-color: #4D5266;
+$activity-bg-color: #232325;
+
+// Connection panel
+$connection-tile-bg: #3e4356;
+$connection-tile-title: $content-text-color;
+$connection-status-bubble-border: #282c3a;
+
+// notifications
+$notification-center-header-color: #3e4356;
+$notification-preview-wrapper-color: $light-background-color;
+
+// dcf panel
+$dcf-panel-content-background: $dark-background-color;
+$dcf-panel-header-background: adjust-color($light-background-color, $red: 20, $green: 20, $blue: 20);
+
+// Bootstrap overrides
+$default-btn-bg-color: #838488;
+$default-btn-text-color: $content-text-color;
+$default-btn-border: #838488;
+$default-btn-hover-bg: #5c637a;
+$default-btn-hover-border: #5c637a;
+
+$form-control-bg: #525565;
+$form-control-border: transparent;
+$form-control-text: $content-text-color;
+$add-on-group-bg: #7f808c;
+$add-on-group-border: transparent;
+$add-on-group-text: $content-text-color;
+
+$dropdown-menu-bg: #3e4356;
+$dropdown-menu-border: #5a617b;
+$dropdown-menu-text: $content-text-color;
+$dropdown-menu-divider-color: #5a617b;
+
+$muted-text-color: #e4e4e4;
+
+$alert-info-text-color: #f9fdff;
+$alert-info-bg: #3f7d9c;
+
+$alert-warning-text-color: #8a6d3b;
+$alert-warning-bg: #ffee73;
+
+$alert-danger-text-color: #f9fdff;
+$alert-danger-bg: #ce6c6c;
+
+$fb-tab-wrapper-bg: #3e4356;
+$fb-tab-wrapper-border-color: #2b3145;
+$fb-tab-border-bottom-hover: #1a1c24;
+$fb-tab-hightlight-color: #5fdeff;
+$fb-unselected-text-color: #a6bcca;
+
+$fb-tab-hover-text-color: #ececec;
+$fb-tab-active-text-color: $content-text-color;
+
+$fb-tab-divider-color: $light-background-border;
+
+$project-dropdown-text-color: #f9f9f9;
+
+$fb-tab-title-color: $content-text-color;
+
+$fb-table-row-bg: #3e4356;
+$fb-table-shadow: none;
+
+$sys-cmd-expanded-shadow: none;
+
+$integration-row-bg: $light-background-color;
+
+/* Settings Page */
+$settings-sidebar-bg: #313644;
+$settings-category-selected-bg: #2a2f3a;
+$settings-category-hover-bg: #303643;
+
+/* effect & variable choosers */
+$effect-category-bg: $dark-background-color;
+$effect-category-hover-bg: $medium-background-color;
+$effect-category-selected-bg: $light-background-color;
+$effect-def-bg: #515357;
+$effect-def-hover-bg: #3e4356;
+$effect-def-selected-border: #767a81;
+$effect-def-selected-check: #2df92d;
+$effect-dialog-bg: #43454a;
+$variable-category-bg: #18191b;
+$variable-magic-tooltip-fg: white;
+$variable-menu-bg: #060707;
+
+// Import Core Styles
+@import './core/$importer';

@@ -1,0 +1,21 @@
+.moderation-feature-block {
+    width: 50%;
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    .title-toggle-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .toggle-button-container {
+            width: 150px;
+            flex-shrink: 0;
+            text-align: right;
+        }
+    }
+}
+
