@@ -43,7 +43,7 @@
 
           postInstall = ''
             makeWrapper ${pkgs.electron}/bin/electron $out/bin/${package.name} \
-              --add-flags $out/lib/node_modules/${package.name}/main.js
+              --add-flags $out/lib/node_modules/${package.name}/src/main.js
           '';
         };
 
