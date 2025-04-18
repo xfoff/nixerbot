@@ -42,7 +42,7 @@
           };
 
           postInstall = ''
-            makeWrapper ${pkgs.electron}/bin/electron $out/bin/${package.name} \
+            makeWrapper ${pkgs.electron}/bin/electron $out/bin/${package.name}/src \
               --add-flags $out/lib/node_modules/${package.name}/src/main.js
           '';
         };
