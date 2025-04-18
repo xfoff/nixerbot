@@ -24,7 +24,7 @@
           version = package.version;
 
           src = ./.;
-          npmDepsHash = "";
+          npmDepsHash = "sha256-UNXnL5zmbIPa00wBKxFbnk7OkJQvh7/pbUxdduw/WxA=";
 
           nativeBuildInputs = with pkgs; [
             electron
