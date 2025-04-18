@@ -16,7 +16,7 @@
       system:
       let
         pkgs = pkgsFor system;
-        package = builtins.fromJSON(builtins.readFile "./package.json");
+        package = builtins.fromJSON(builtins.readFile "${self}/package.json");
       in
       rec {
         firebot = pkgs.buildNpmPackage {
